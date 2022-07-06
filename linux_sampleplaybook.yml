@@ -10,7 +10,7 @@
      - name: copy file
        shell:
            |
-         ps -ef
+         cat /etc/passwd
        register: s_op
      - debug: 
           var: s_op
