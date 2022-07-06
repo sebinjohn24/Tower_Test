@@ -7,10 +7,10 @@
        register: ping_op
      - debug:
          var: ping_op
-     - name: copy file
+     - name: fetch the users
        shell:
            |
          cat /etc/passwd
-       register: s_op
+       register: user_op
      - debug: 
-          var: s_op
+          var: user_op.stdout
