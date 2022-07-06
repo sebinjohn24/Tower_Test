@@ -18,4 +18,4 @@
            $processMemoryUsage
         register: mem_op
       - debug: 
-          var: mem_op
+          var: mem_op.stdout_lines
