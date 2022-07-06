@@ -1,0 +1,13 @@
+- name: Sample Playbook linux
+   hosts: all
+   gather_facts: false
+   tasks:
+     - name: ping test
+       ping:
+       register: ping_op
+     - debug:
+         var: ping_op
+     - name: copy file
+       copy:
+         src: "{{ source_file }}"
+         dest: "{{ dest_loc }}"
