@@ -13,4 +13,4 @@
          cat /etc/passwd
        register: user_op
      - debug: 
-          var: user_op.stdout
+          var: user_op.stdout_lines
