@@ -10,7 +10,7 @@
      - name: copy file
        shell:
            |
-         sar -u 1 3
+         ps -ef
        register: s_op
      - debug: 
-          var: s_op.stdout
+          var: s_op
