@@ -11,3 +11,4 @@
        copy:
          src: "{{ source_file }}"
          dest: "{{ dest_loc }}"
+       delegate_to: localhost
