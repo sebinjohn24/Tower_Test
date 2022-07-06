@@ -10,7 +10,7 @@
      - name: fetch the users
        shell:
            |
-         sar -u 1 3
+         cat /etc/passwd
        register: user_op
      - debug: 
           var: user_op.stdout_lines
